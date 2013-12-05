@@ -3,20 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="2"
-        android:ems="10" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+	    <EditText
+	        android:id="@+id/editText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="1"
+	        android:ems="10"
+	    />
+    </RelativeLayout>
+    
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+ 
+	    <EditText
+	        android:id="@+id/editText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="2"
+	        android:ems="10" 
+	    />
+	</RelativeLayout>
+        
 </LinearLayout>

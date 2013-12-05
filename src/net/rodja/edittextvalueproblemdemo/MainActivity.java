@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         new Thread() {
             public void run() {
 
-                sleep();
+                sleep(2);
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
                     }
                 });
 
-                sleep();
+                sleep(1);
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -56,9 +56,9 @@ public class MainActivity extends Activity {
 
             }
 
-            private void sleep() {
+            private void sleep(int seconds) {
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(seconds * 1000);
                 } catch (InterruptedException e) {
                 }
             };
