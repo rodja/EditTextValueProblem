@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
                     }
                 });
 
-                sleep(2);
+                sleep(3);
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
                     }
                 });
 
-                sleep(2);
+                sleep(1);
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
             if (v.getChildAt(i) instanceof ViewGroup)
                 simulateUserInput((ViewGroup) v.getChildAt(i));
             else if (v.getChildAt(i) instanceof EditText) {
-                ((EditText) v.getChildAt(i)).setText("input #" + input++);
+                ((EditText) v.getChildAt(i)).setText("from input: item #" + input++);
             }
 
         }
@@ -115,7 +115,7 @@ public class MainActivity extends Activity {
                 } else {
                 }
                 EditText editText = (EditText) convertView.findViewById(R.id.editText);
-                editText.setText("position: " + position);
+                editText.setText("from adapter: item #" + position);
 
                 return convertView;
             }
