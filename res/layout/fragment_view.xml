@@ -2,30 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-	    <EditText
-	        android:id="@+id/editText"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:text="1"
-	        android:ems="10"
-	    />
-    </RelativeLayout>
-    
-    <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+    android:orientation="vertical"
+    android:id="@+id/fragment" >
  
-	    <EditText
-	        android:id="@+id/editText"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:text="2"
-	        android:ems="10" 
-	    />
-	</RelativeLayout>
+    
+ 	<include layout="@layout/editable_item" />
+ 	<include layout="@layout/editable_item" />
+ 
+    <ListView android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/list">
         
+    </ListView>
 </LinearLayout>
